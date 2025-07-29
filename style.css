@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5e60ce;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading */
+h1 {
+    background-color: #80ffdb;
+    color: #184e77;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+}
+
+/* Choice Images */
+.choiceimages {
+    height: 12vw;
+    width: 12vw;
+    max-height: 165px;
+    max-width: 165px;
+    min-height: 80px;
+    min-width: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.choiceimages:hover {
+    cursor: pointer;
+    background-color: #48bfe3;
+}
+
+img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Choices container */
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+/* Scoreboard */
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+    color: white;
+    flex-wrap: wrap;
+}
+
+#user-score,
+#comp-score {
+    font-size: 4rem;
+}
+
+/* Message box */
+.msg-container {
+    margin-top: 5rem;
+    padding: 0 1rem;
+}
+
+#msg {
+    background-color: #52b69a;
+    color: #184e77;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+
+    .choices {
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .score-board {
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    #user-score,
+    #comp-score {
+        font-size: 2.5rem;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .choiceimages {
+        height: 25vw;
+        width: 25vw;
+    }
+
+    .choices {
+        gap: 1rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+    }
+}
+
